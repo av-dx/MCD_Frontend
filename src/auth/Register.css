@@ -1,0 +1,27 @@
+Home .Card.Body {
+  background-color: "#343a40";
+}
+Home .Card {
+  background-color: black;
+}
+.carousel-indicators li {
+  background-color: darkgray;
+}
+
+.registerMainSpace{
+  width: 30vw;
+  height: 100vh;
+	padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registerForm{
+  margin-top: 100px;
+  /* font-size: 125%; */
+  display: flex;
+	flex-flow: column wrap;
+  /* align-content: center; */
+}
+
+

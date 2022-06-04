@@ -1,0 +1,380 @@
+/* ICONS Scaling 
+	// 1x - 14px
+	// 2x - 28px
+	// 3x - 42px
+	// 4x - 56px
+	// 5x - 70px
+*/
+.Nav {
+  width: 100%;
+  height: 3em;
+  background-color: black;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
+
+/* Important General Classes */
+
+.mainSpace {
+  width: 70vw;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainContent {
+  font-size: 120%;
+}
+
+.flexRowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.centerContent {
+  justify-content: center;
+}
+.spaceEvenly{
+  justify-content: space-evenly;
+}
+
+.releaseBtn:hover{
+  color:white;
+}
+
+.customCheckbox{
+  cursor: pointer;
+}
+.customCheckbox:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  border-bottom: 2px solid rgb(0, 123, 255);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.box:hover {
+  background-color: whitesmoke;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spChar {
+  font-size: 150%;
+  font-weight: 300;
+  color: rgb(0, 123, 255);
+}
+.spaceAround {
+  margin: 0 0.4em;
+}
+.alignCenter {
+  align-self: center;
+}
+
+.keepRight{
+	margin-left: auto;
+}
+
+a:link,
+a:visited {
+  text-decoration: none !important;
+  /* cursor: pointer; */
+  border: none;
+  color: black;
+}
+a:link:hover,
+a:visited:hover {
+  color: rgb(0, 123, 255);
+}
+
+.tag {
+  font-size: 100%;
+  color: rgb(0, 123, 255);
+  padding: 0.35em;
+  margin: 0.2em;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+}
+
+.breadCrumbs {
+  width: 100%;
+  padding-left: 10px;
+  color: black;
+  font-size: max(1.5vw, 25px);
+  margin-bottom: 1.5em;
+  /* display: inline-block; */
+  border-bottom-left-radius: 20px;
+  border-bottom: 2px solid rgb(0, 123, 255);
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.enableScroll {
+  max-height: 75vh;
+  overflow-y: auto;
+  /* border: 1px red dashed; */
+  /* Hide Scroll Bar */
+  /* scrollbar-width: none; Firefox */
+  /* -ms-overflow-style: none; IE & Edge */
+}
+/* .enableScroll::-webkit-scrollbar {
+  display: none; Chrome , Safari & Opera
+} */
+.enableScroll:hover{
+  cursor: n-resize;
+}
+.cursorPointer:hover{
+  cursor: pointer;
+}
+
+
+/* Tasks */
+.tasksList{
+  /* border: 1px red dashed; */
+  width: 100%;
+}
+.task {
+  width: 13em;
+  height: 13em;
+  padding: 1em;
+  margin: 1em;
+
+  justify-content: space-around;
+}
+.name {
+  font-size: 150%;
+  color: black;
+  text-align: center;
+}
+
+/* Sessions */
+.session {
+  width: 7em;
+  height: 7em;
+  margin: 0.5em;
+
+  justify-content: space-between;
+}
+.smName {
+  font-size: 100%;
+  color: black;
+  text-align: center;
+}
+.taskDetails h4 {
+  text-decoration: underline 3px rgb(0, 123, 255);
+}
+
+.qtypeHeader{
+  width: 100%; 
+  display:flex;
+  justify-content: space-between;
+}
+.qtypeHeader:hover{
+  cursor: pointer;
+}
+
+/* Questions */
+
+.QnA {
+  padding: 1em;
+  background-color: whitesmoke;
+  min-height: 25vh;
+  /* min-height: 100%; */
+}
+.AnsForm {
+  display: grid;
+  width: 100%;
+  padding-left: 0.25vw;
+  /* border: dashed red; */
+}
+.submitBtn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.translationBtns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.QNum {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* LeaderBoard */
+.selectBar {
+  width: 80%;
+}
+
+/* Create Problem */
+.createProblemMainSpace {
+  width: 60vw;
+  height: 90vh;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-flow: column;
+  /* align-items: center; */
+}
+
+.createProblemForm {
+  /* font-size: 125%; */
+  display: flex;
+  flex-flow: column wrap;
+  /* align-content: center; */
+}
+
+/* PROFILE */
+.profileHeader{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  min-width: 150px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom: 2px solid rgb(0, 123, 255);
+}
+.quickInfo img{
+  width: 150px;
+  height: 150px;
+  padding:10px;
+  border-radius: 50%;
+  align-self: center;
+}
+.quickInfo{
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 110%;
+  min-width: 150px;
+  justify-content: center;
+}
+.intro{
+  display: flex;
+  flex-flow: column wrap;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+}
+
+.scoreDetails{
+  display: flex;
+  align-items: center;
+  font-size: 200%;
+  color:rgb(0, 123, 255);
+}
+
+.formPlainText{
+  color:rgb(0, 123, 255);
+  font-size: 150%;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  border: solid transparent;
+  border-width: 1px 0;;
+}
+
+.allProgress{
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: start; */
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 60vh;
+}
+
+.oneBar{
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+}
+
+.innerChild{
+  width: 100px;
+  height: 100px;
+  font-size: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.download-button {
+	background-color:rgb(0, 123, 255);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+	padding: .5rem 1rem;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all .2s ease-in;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.report-container {
+  overflow-y: auto;
+  height: 25rem;
+	display: flex;
+	margin: 3rem 1.5rem;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.report-table th, td{
+  text-align: center;
+}
+
+.fromGroup{
+  margin-bottom: 15px;
+  background-color: red;
+}
+
+.statsHeader{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-size: 120%;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.green{
+  color: rgb(0,200,0);
+}
+.blue{
+  color: rgb(0, 123, 255);
+}
+.red{
+  color: rgb(255,0,0);
+}
+
+.count{
+  font-size: 80%;
+  margin: 0px 5px;
+}
+.count:hover{
+  font-size: 100%;
+  font-weight: bold;
+}
