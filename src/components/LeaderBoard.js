@@ -18,7 +18,8 @@ const LeaderBoard =()=>{
 	useEffect(() => {
 		const getSessionDetails =async () => {
 			console.log('requesting from', `${process.env.REACT_APP_API}/leaderboard`);
-			let leaderURL = `${process.env.REACT_APP_API}/leaderboard`;
+			//let leaderURL = `${process.env.REACT_APP_API}/leaderboard`;
+			let leaderURL = '//mcdbackend.indicwikidsp.tk/leaderboard';
 			if(userAuthToken){
 				leaderURL = `${leaderURL}?auth_token=${userAuthToken}/`;
 			}
