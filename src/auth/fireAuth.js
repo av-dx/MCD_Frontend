@@ -1,15 +1,15 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 
-const firebaseConfig ={
-	apiKey: "AIzaSyBhu5qApLVhq9XNUOWCuWROkstZDdzcE8w",
-	authDomain: "microcontentdevlopment.firebaseapp.com",
-	databaseURL: "https://microcontentdevlopment-default-rtdb.asia-southeast1.firebasedatabase.app",
-	projectId: "microcontentdevlopment",
-	storageBucket: "microcontentdevlopment.appspot.com",
-	messagingSenderId: "12134570353",
-	appId: "1:12134570353:web:64e77eef37a99cb990fed0"
-  };
+const firebaseConfig = {
+	apiKey: "AIzaSyDrd3CmqvgV7dCcTRjMj3Va-7xzzWOAm-k",
+	authDomain: "microcontentdev-64a05.firebaseapp.com",
+	projectId: "microcontentdev-64a05",
+	storageBucket: "microcontentdev-64a05.appspot.com",
+	messagingSenderId: "398987090119",
+	appId: "1:398987090119:web:33f319021fbe9fcfa106e2",
+	measurementId: "G-ZKXDQ4SBVL"
+};
 
 firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
