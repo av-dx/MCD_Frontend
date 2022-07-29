@@ -93,7 +93,7 @@ const Register = ({ setShowAlert }) => {
       setFireErrorPass(null);
       flag = false;
     }
-    if (!pass2 && pass !== pass2) {
+    if (pass !== pass2) {
       setErrorPass2(true);
       flag = false;
     }
