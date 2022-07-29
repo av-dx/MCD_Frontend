@@ -119,7 +119,7 @@ const Register = ({ setShowAlert }) => {
       };
       const getResponse = async () => {
         const response = await fetch(
-          `${process.env.REACT_APP_API}/user`,
+          `${process.env.REACT_APP_API}/user/`,
           postObj
         );
         const data = await response.json();
